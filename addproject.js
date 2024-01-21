@@ -45,7 +45,7 @@ $(document).ready(function () {
       contentType: false,
       processData: false,
       success: function (file) {
-        console.log(imgInput);
+        // console.log(imgInput);
         if (file) {
           const files = JSON.parse(file);
           formData["file"] = files.file;
@@ -57,7 +57,7 @@ $(document).ready(function () {
           contentType: false,
           processData: false,
           success: function (img) {
-            console.log(img);
+            // console.log(img);
             if (img) {
               const imgs = JSON.parse(img);
               formData["img"] = imgs.img;
@@ -82,7 +82,7 @@ $(document).ready(function () {
               type: "POST",
               data: { data: formData },
               success: async function (resp) {
-                console.log(resp);
+                // console.log(resp);
                 const res = JSON.parse(resp);
 
                 if (res.status == "error") {

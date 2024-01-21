@@ -136,7 +136,7 @@ $query = $conn->select("projects"); ?>
                             id: id
                         },
                         success: async function(response) {
-                            console.log(response);
+                            // console.log(response);
                             const res = JSON.parse(response)
                             await Swal.fire({
                                 title: res.title,
@@ -207,7 +207,7 @@ $query = $conn->select("projects"); ?>
 
                             formData['file'] = res.file
                         } else {
-                            console.log("not");
+                            // console.log("not");
                         }
                         $.ajax({
                             url: `service/uploadImg.php?editProjimg=${id}`,
@@ -223,7 +223,7 @@ $query = $conn->select("projects"); ?>
 
                                     formData['img'] = res.img
                                 } else {
-                                    console.log("not");
+                                    // console.log("not");
                                 }
                                 $.ajax({
                                     url: "service/action.php?editProject=1",

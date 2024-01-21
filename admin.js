@@ -50,7 +50,7 @@ $(document).ready(function () {
             type: "POST",
             data: { data: formData },
             success: async function (resp) {
-              console.log(resp);
+              // console.log(resp);
               const res = JSON.parse(resp);
 
               if (res.status == "error") {

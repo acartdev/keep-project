@@ -102,7 +102,7 @@ if (empty($_SESSION["id"])) {
               data: formData
             },
             success: async (respons) => {
-              console.log(respons);
+              // console.log(respons);
               const res = JSON.parse(respons)
               if (res.status == "error") {
                 await Swal.fire({

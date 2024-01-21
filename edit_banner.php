@@ -91,7 +91,7 @@ $query = $conn->select("teacher");
                                 path: path
                             },
                             success: async function(response) {
-                                console.log(response);
+                                // console.log(response);
                                 const res = JSON.parse(response)
                                 await Swal.fire({
                                     title: res.title,

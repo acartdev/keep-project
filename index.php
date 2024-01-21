@@ -72,7 +72,7 @@ if (isset($_POST['search'])) {
             } else {
 
                 let link = $('<a></a>');
-                console.log(url);
+                // console.log(url);
                 link.attr('href', url);
 
 
@@ -94,7 +94,7 @@ if (isset($_POST['search'])) {
             })
             $("#search_text").keyup(e => {
                 let input = e.target.value
-                console.log(input);
+                // console.log(input);
 
 
                 $.ajax({

@@ -120,7 +120,7 @@ $query = $conn->select("users", [], "role = 'user'");
                             id: id
                         },
                         success: async function(response) {
-                            console.log(response);
+                            // console.log(response);
                             const res = JSON.parse(response)
                             await Swal.fire({
                                 title: res.title,

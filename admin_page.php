@@ -154,7 +154,7 @@ $query = $conn->select("users", [], "role = 'admin'");
                             data: formData
                         },
                         success: async (respons) => {
-                            console.log(respons);
+                            // console.log(respons);
                             const res = JSON.parse(respons)
                             if (res.status == "error") {
                                 await Swal.fire({
