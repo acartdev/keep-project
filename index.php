@@ -47,12 +47,21 @@ if (isset($_POST['search'])) {
         <hr>
 
 
-        <div class="row row-cols-md-3 row-cols-lg-4 row-cols-2 g-lg-3 g-2" id="containers">
+        <div class="row row-cols-md-3 row-cols-lg-4 row-cols-2 g-lg-3 g-2" style="min-height: 340px;" id="containers">
 
 
         </div>
 
-
+        <footer class=" w-100 text-center">
+            <hr>
+            <p class="lh-1"><i class="fa-regular fa-copyright"></i> Copy-right 2024</p>
+            <p class="lh-1">
+                พัฒนาโดย นายธนภัทร กองเงิน
+            </p>
+            <p class="lh-1">
+                ผู้พัฒนาร่วม นายเอกรัตน์ เปสะพันธ์ุ
+            </p>
+        </footer>
     </div>
     <?php include("endnav.php") ?>
 
