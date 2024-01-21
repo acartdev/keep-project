@@ -87,7 +87,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `password`, `img`, `role`, `edl`, `dept`) VALUES
-('admin', 'ธนภัทรasd', 'กองเงิน', '$2y$10$THGUoK/NGng3wP7F0k/WFOeIQQepSsq/ZsoHRDu5P6sJo8TbFvfWu', 'uploads/65ad24db5d9b6_1705845979.jpg', 'super', NULL, '');
+('admin', 'ธนภัทรasd', 'กองเงิน', '$2y$10$THGUoK/NGng3wP7F0k/WFOeIQQepSsq/ZsoHRDu5P6sJo8TbFvfWu', 'uploads/botavatar.jpg', 'super', NULL, '');
 
 --
 -- Indexes for dumped tables
