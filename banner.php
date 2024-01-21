@@ -1,11 +1,9 @@
-<div id="carouselExampleInterval" class="carousel slide bg-danger shadow" data-bs-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide bg-transparent shadow " data-bs-ride="carousel">
 
     <div class="carousel-inner mx-auto w-100 crs">
-        <div class="position-absolute">
 
-        </div>
         <div class="carousel-item  active" data-bs-interval="2000">
-            <img src="images/logo/2.jpg" class="d-block w-100 h-100 img-fluid object-fit-cover" alt="information technology">
+            <img src="images/logo/2.jpg" class="d-block w-100 h-100 img-fluid img-thumbnail object-fit-cover" alt="information technology">
         </div>
         <?php
         $directory = 'images/banner';
@@ -17,7 +15,7 @@
 
         ?>
                 <div class="carousel-item " data-bs-interval="3000">
-                    <img src="<?= $filePath ?>" class="d-block w-100 h-100 img-fluid object-fit-cover" alt="information technology">
+                    <img src="<?= $filePath ?>" class="d-block w-100 h-100 img-fluid img-thumbnail object-fit-cover" alt="information technology">
                 </div>
         <?php
             }
