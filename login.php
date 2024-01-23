@@ -19,6 +19,7 @@
                     <div class="mb-3 input-group">
                         <label for="recipient-name" class="col-form-label input-group-text">รหัสผ่าน:</label>
                         <input type="password" class="form-control" name="password" required />
+                        <button class="btn btn-outline-secondary" type="button" id="show-pass"><i id="eye" class="fa-solid fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -33,3 +34,11 @@
         </div>
     </div>
 </div>
+<script>
+    $("#show-pass").click(function(e) {
+        e.preventDefault()
+        let type = $("input[name='password']").attr("type") == "password" ? "text" : "password";
+        $("input[name='password']").attr("type", type)
+        type == "password" ? $("#eye").toggleClass("fa-eye fa-eye-slash") : $("#eye").toggleClass("fa-eye-slash fa-eye")
+    })
+</script>

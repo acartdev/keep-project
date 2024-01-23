@@ -33,14 +33,19 @@ $(document).ready(function () {
         contentType: false,
         processData: false,
         success: function (files) {
+          // console.log(files);
           let formData = {};
           $("#regisForm input,#regisForm select").each(function () {
             if ($(this).attr("name") !== undefined) {
               formData[$(this).attr("name")] = $(this).val();
             }
           });
-          const file = JSON.parse(files);
-          formData["img"] = file.img;
+          if (files) {
+            const file = JSON.parse(files);
+            formData["img"] = file.img;
+          } else {
+            formData["img"] = "images/profile.webp";
+          }
           $.ajax({
             url: "service/action.php?register=1",
             type: "POST",

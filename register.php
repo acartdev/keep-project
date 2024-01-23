@@ -41,6 +41,8 @@
                     <div class="mb-3 input-group " id="checkPass">
                         <label for="recipient-name" class="col-form-label input-group-text">รหัสผ่าน:</label>
                         <input type="password" class="form-control " placeholder="รหัสผ่านต้องมีความยาวมากกว่า 8 ตัวอักษร" id="password" name="password" required>
+                        <button class="btn btn-outline-secondary" type="button" id="show-pass-re"><i id="eye-re" class="fa-solid fa-eye"></i></button>
+
                         <div class="invalid-feedback">
                             รหัสผ่านต้องมีความยาวมากกว่า 8-20 ตัวอักษร
                         </div>
@@ -63,3 +65,11 @@
         </div>
     </div>
 </div>
+<script>
+    $("#show-pass-re").click(function(e) {
+        e.preventDefault()
+        let type = $("input[name='password']").attr("type") == "password" ? "text" : "password";
+        $("input[name='password']").attr("type", type)
+        type == "password" ? $("#eye-re").toggleClass("fa-eye fa-eye-slash") : $("#eye-re").toggleClass("fa-eye-slash fa-eye")
+    })
+</script>
